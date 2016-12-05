@@ -1,0 +1,185 @@
+body{
+	width: 1920px;
+	height: 1200px;
+	background-image: url("../images/profile/background.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 50s linear infinite;
+	-webkit-backface-visibility: hidden
+	
+}
+
+/*===========================================================
+           HEADER 
+============================================================*/
+#top-span {
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: #F57E2B;
+	/* background: #E7CE13; */
+	height: 90px;
+	width: 100%;
+	border: .5px solid brown;
+	-webkit-backface-visibility: hidden;
+	opacity: 0.85;
+}
+/* #header-display { */
+	/* text-align: center; */
+	/* display: inline; */
+	/* margin: 0; */
+	/* padding: 0; */
+	/* list-style: none; */
+/* } */
+#logo {
+	height: 80px;
+	width: 120px;
+	margin-top: 3px;
+	margin-left: 3px;
+	-webkit-backface-visibility: hidden
+}
+
+#header-name {
+	margin-top: -75px;
+	position: relative;
+	color: #524A21;
+	font-family: Helvetica;
+	text-align: center;
+	text-shadow: 2px 4px 2px rgba(0,0,0, 0.3);
+	/* text-shadow: -.2px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black; */
+	-webkit-backface-visibility: hidden
+}
+#header-name-sub {
+	margin-top: -20px;
+	font-family: Arial;
+	color: #524A21;
+	text-align: center;
+	position: relative;	
+	text-shadow: 2px 4px 2px rgba(0,0,0, 0.2);
+	-webkit-backface-visibility: hidden
+}
+#header-tagline {
+	text-align: center;
+	font-size: 25;
+	margin-top: -18px;
+	color: #524A21;
+	-webkit-backface-visibility: hidden
+}
+/*===========================================================
+          HOMEPAGE MENU LINKS___TBD
+============================================================*/
+
+/*===========================================================
+           FRONT PIC ROW
+============================================================*/
+/*------PROFESSIONAL LIST SECTION----------*/
+#frontpage-left {
+	margin-top: -11px;
+	-webkit-backface-visibility: hidden;
+}
+
+	
+#frontpage-left-header {
+	text-shadow: 2px 4px 2px rgba(0,0,0, 0.3);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid brown;
+	background-color: #F57E2B;
+	font-size: 30px;
+	-webkit-backface-visibility: hidden;
+	opacity: 0.85;
+	color: #524A21;
+}
+
+#frontpage-left-list {
+	color: #ECDE74;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 30px;
+	-webkit-backface-visibility: hidden;
+}
+a {
+	color: #fff;
+	-webkit-backface-visibility: hidden
+}
+
+
+/*------MIDDLE PIC SECTION----------*/
+#frontpage-pic-container{
+	/* background: #fff; */
+	display: inline;
+	margin-top: 91px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	/* border: 1px solid black; */
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden
+}
+#frontpage-pic img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 350px;
+	margin-top: 0px;
+	position: center;
+	/* width: 350px; */
+	/* height: auto; */
+	border: 1px solid brown;
+	border-radius: 10%;
+	overflow: hidden;
+}
+/*------HOME SECTION----------*/
+#frontpage-right-header {
+	text-shadow: 2px 4px 2px rgba(0,0,0, 0.3);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid brown;
+	background-color: #F57E2B;
+	font-size: 30px;
+	-webkit-backface-visibility: hidden;
+	opacity: 0.85;
+	color: #524A21;
+}
+#frontpage-right-list {
+	color: #ECDE74;
+	text-shadow: 2px 4px 1px rgba(0,0,0, 1);
+	font-size: 30px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	-webkit-backface-visibility: hidden
+}
+
+/*===========================================================
+          BACKGROUND ANIM
+============================================================*/
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/*===========================================================
+          FRONT PIC ANIM
+============================================================*/
+
+#frontpage-pic img{
+	transition: transform 2s;
+	transform-origin: 50% 50%;
+	cursor: pointer;
+}
+#frontpage-pic:hover img {
+	transform: scale(1.152);
+}
+
+
+/* #frontpage-pic img { */
+	/* transition: transform .5s; */
+	/* transform-origin: 50% 50%; */
+/* } */
+/* #frontpage-pic:hover img { */
+	/* transform: scale(1.1); */
+/* } */
